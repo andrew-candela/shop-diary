@@ -1,0 +1,29 @@
+#pip cache
+.cache/
+
+# misc
+.empty/
+.python_history/
+.ipynb_checkpoints/
+*egg-info/
+
+# don't need any python libraries in git
+.local/
+*egg-info/
+
+.vscode/
+
+# installing Conda might try to create a bashrc file
+.bashrc 
+
+# python generated files
+*.pyc
+*__pycache__*
+.pytest_cache/
+
+# environment files
+.env
+venv/
+venv*
+*env/
+*conda_env/
