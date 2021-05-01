@@ -18,7 +18,7 @@ class HelpIntentHandler(AbstractRequestHandler):
         # type: (HandlerInput) -> Response
         if len(intents) > 1:
             first_ints_str = ', '.join(list(intents.keys())[:-1])
-            speak_output = f"The intents I support are {first_ints_str} " \
+            speak_output = f"Here are the intents I support: {first_ints_str} " \
                            f"and {list(intents.keys())[-1]}. "
         else:
             speak_output = f"The intents I support are {intents.keys()}. "

@@ -18,7 +18,8 @@ prep_deployment_package_in_github_actions () {
 
 prep_deployment_package () {
     echo "Preparing Deployment Package"
-    pip install . -q
+    . venv/bin/activate
+    pip install . --no-cache-dir
     original_wd=`pwd`
     cd ${original_wd}/venv/lib/python3.8/site-packages
     zip --quiet -r9 ${original_wd}/function.zip .

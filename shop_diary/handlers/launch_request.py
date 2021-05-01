@@ -18,7 +18,7 @@ class LaunchRequestHandler(AbstractRequestHandler):
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
         intent_list_str = ", ".join(list(intents.keys()))
-        speak_output = f"Welcome to Shop Diary. You can say, " \
+        speak_output = f"Welcome to Shop Diary! You can say, " \
                        f"{intent_list_str} or just say help."
         return (
             handler_input.response_builder

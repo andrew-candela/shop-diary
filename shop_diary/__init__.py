@@ -27,5 +27,5 @@ intents = {
         "what bicycles or motorcycles do I have"
     ],
     "log entry": ["log an entry", "create a log entry"],
-    "torque specs": ["how tight should I make this bolt"]
+    "torque specs": ["how tight should I make this bolt"],
 }
